@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* 🌈 General Layout */
+body {
+  background: linear-gradient(135deg, #f0f7ff, #e3f2fd);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+/* 🧭 Container */
+.container {
+  max-width: 1100px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 🧾 Headings */
+h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #1565c0;
+}
+
+h5 {
+  color: #0d47a1;
+}
+
+/* 🧍‍♂️ Form Section */
+form {
+  margin-bottom: 20px;
+}
+
+input, select {
+  border-radius: 10px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, select:focus {
+  border-color: #42a5f5 !important;
+  box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.25) !important;
+}
+
+/* 🎯 Button Styles */
+.btn {
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #1976d2;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0d47a1;
+}
+
+.btn-success {
+  background-color: #2e7d32;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #1b5e20;
+}
+
+.btn-danger {
+  background-color: #c62828;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #8e0000;
+}
+
+.btn-warning {
+  color: #000;
+  background-color: #ffeb3b;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #fdd835;
+}
+
+/* 🧩 User Block */
+.user-block {
+  background: #fafafa;
+  border: 1px solid #dbe3f0;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+.user-block h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.user-block .btn-danger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* ⚠️ Invalid Input */
+.is-invalid {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 6px rgba(220, 53, 69, 0.5) !important;
+}
+
+/* 📋 Table Styles */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #bbdefb !important;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.table td {
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e3f2fd !important;
+}
+
+/* 🚫 Deleted Row */
+.deleted-row {
+  background-color: #ffebee !important;
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+/* ✅ Alerts */
+.alert {
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #c8e6c9;
+  color: #256029;
+}
+
+.alert-warning {
+  background-color: #fff9c4;
+  color: #7f6000;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .user-block {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🪩 Fancy Scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3f2fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #64b5f6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1976d2;
+}
