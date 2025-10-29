@@ -197,3 +197,131 @@ input:focus, select:focus {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #1976d2;
 }
+
+/* 🌑 Improved Dark Mode (readable version) */
+body.dark-mode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #f5f5f5;
+}
+
+body.dark-mode .container {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+  color: #64b5f6 !important;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2c2c2c !important;
+  color: #ffffff !important;
+  border-color: #555 !important;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode select option {
+  color: #aaa !important;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus {
+  border-color: #90caf9 !important;
+  box-shadow: 0 0 0 3px rgba(144, 202, 249, 0.3) !important;
+}
+
+/* 🎨 Table readability */
+body.dark-mode .table {
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .table th {
+  background-color: #263238 !important;
+  color: #81d4fa !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode .table td {
+  background-color: #1e1e1e !important;
+  color: #f5f5f5 !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+  background-color: #2c2c2c !important;
+}
+
+/* ✅ Buttons */
+body.dark-mode .btn-primary {
+  background-color: #2196f3 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .btn-success {
+  background-color: #43a047 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .btn-danger {
+  background-color: #e53935 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .btn-warning {
+  background-color: #ffeb3b !important;
+  color: #000 !important;
+}
+
+body.dark-mode .btn-outline-dark {
+  border-color: #90caf9;
+  color: #90caf9;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #90caf9;
+  color: #000;
+}
+
+/* ⚠️ Alerts */
+body.dark-mode .alert-success {
+  background-color: #1b5e20;
+  color: #a5d6a7;
+}
+
+body.dark-mode .alert-warning {
+  background-color: #fbc02d;
+  color: #000;
+}
+
+/* 🚫 Deleted Row */
+body.dark-mode .deleted-row {
+  background-color: #3b0000 !important;
+  color: #f44336 !important;
+  opacity: 0.9;
+  text-decoration: line-through;
+}
+
+/* 🌗 Toggle button */
+#themeToggle {
+  border-radius: 20px;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode #themeToggle {
+  background-color: #263238;
+  color: #81d4fa;
+  border: 1px solid #81d4fa;
+}
+
+body.dark-mode #themeToggle:hover {
+  background-color: #81d4fa;
+  color: #000;
+}
