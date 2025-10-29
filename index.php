@@ -171,6 +171,10 @@ $countries = $conn->query("SELECT id, country_name FROM countries ORDER BY count
 <body>
 <div class="container">
     <h2 class="text-center mb-4 text-primary fw-bold">User Form (CRUD + Country/State)</h2>
+    <div class="text-end mb-3">
+        <button id="themeToggle" class="btn btn-outline-dark btn-sm">🌙 Dark Mode</button>
+    </div>
+
 
     <?php if($message): ?>
         <div class="alert <?= strpos($message, 'successfully') !== false ? 'alert-success' : 'alert-warning' ?>">
@@ -466,6 +470,7 @@ function setupCountryStateDependency(userBlock) {
     });
 }
 
+
 /* ----- For Edit form: populate edit_state on load when editing ----- */
 <?php if($editUser): ?>
 // When edit form exists, load states for selected country and set selected state
@@ -504,6 +509,23 @@ function setupCountryStateDependency(userBlock) {
     });
 })();
 <?php endif; ?>
+
+/* ----- Dark Mode Toggle ----- */
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+  themeToggle.textContent = '☀️ Light Mode';
+}
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  const darkModeOn = body.classList.contains('dark-mode');
+  themeToggle.textContent = darkModeOn ? '☀️ Light Mode' : '🌙 Dark Mode';
+  localStorage.setItem('theme', darkModeOn ? 'dark' : 'light');
+});
+
 </script>
 </body>
 </html>
